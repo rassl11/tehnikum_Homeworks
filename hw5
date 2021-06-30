@@ -1,0 +1,40 @@
+ #def stroka(l):
+#    x = {
+#        'upper':0,
+#        'lower':0
+#    }
+#    for i in l:
+#       if i.islower():
+#           x['lower']+=1
+#       elif i.isupper():
+#          x['upper']+=1
+#   print("Твое исходное предложение : ",l)
+#   print("Колличество Заглавных букв:", x['upper'] )
+#   print("Колличество Маленьких букв:", x['lower'] )
+#
+#print(stroka(input("Введи тескт и я скажу сколько в неи больших и маленбких букв :")))
+
+
+#def simple_number(x):
+#    if x == 1:
+#        return False
+#    elif x == 2:
+#        return True
+#    elif x == 0:
+#        a = "0 нельзя считать простым или непростым"
+#        return a
+#    else:
+#        for i in range(2,x):
+#            if(x % i==0):
+#                return False
+#        return True
+#print(simple_number(int(input("Введи число и я скажу True если оно простое или False если нет: "))))
+
+
+def func(x):
+    a = []
+    for i in x:
+        if i not in a:
+            a.append(i)
+    print(''.join(a))
+print(func('aaaabbbaccccdd'))
